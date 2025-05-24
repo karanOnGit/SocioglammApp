@@ -6,7 +6,6 @@ import ShopScreen from '../screens/ShopScreen';
 import WalletScreen from '../screens/WalletScreen';
 import ProfileScreen from '../screens/ProfileScreen';
 import UploadScreen from '../screens/UploadScreen';
-// import CommunityScreen from '../screens/CommunityScreen';
 import CommunityPost from '../screens/CommunityPost';
 
 const Tab = createBottomTabNavigator();
@@ -26,6 +25,7 @@ export function CommunityBottomTabNavigator() {
                 },
                 tabBarActiveTintColor: '#2E8B57',
                 tabBarInactiveTintColor: 'gray',
+                headerShown: false,
             })}
         >
             <Tab.Screen name="Home" component={HomeScreen} />
@@ -52,6 +52,7 @@ export function EcommerceBottomTabNavigator() {
                 },
                 tabBarActiveTintColor: '#2E8B57',
                 tabBarInactiveTintColor: 'gray',
+                headerShown: false,
             })}
         >
             <Tab.Screen name="Home" component={HomeScreen} />

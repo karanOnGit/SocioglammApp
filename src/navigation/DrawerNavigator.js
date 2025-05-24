@@ -8,7 +8,7 @@ const Drawer = createDrawerNavigator();
 export default function DrawerNavigator() {
     return (
         <Drawer.Navigator drawerContent={(props) => <DrawerContent {...props} />}>
-            <Drawer.Screen name="MainTabs" component={TopTabNavigator} />
+            <Drawer.Screen name="Socioglamm" component={TopTabNavigator} />
         </Drawer.Navigator>
     );
 }
