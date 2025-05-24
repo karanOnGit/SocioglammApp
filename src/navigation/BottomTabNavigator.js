@@ -6,8 +6,8 @@ import ShopScreen from '../screens/ShopScreen';
 import WalletScreen from '../screens/WalletScreen';
 import ProfileScreen from '../screens/ProfileScreen';
 import UploadScreen from '../screens/UploadScreen';
-import CommunityScreen from '../screens/CommunityScreen';
-// import CommunityPost from '../screens/CommunityPost';
+// import CommunityScreen from '../screens/CommunityScreen';
+import CommunityPost from '../screens/CommunityPost';
 
 const Tab = createBottomTabNavigator();
 
@@ -29,7 +29,7 @@ export function CommunityBottomTabNavigator() {
             })}
         >
             <Tab.Screen name="Home" component={HomeScreen} />
-            <Tab.Screen name="Community" component={CommunityScreen} />
+            <Tab.Screen name="Community" component={CommunityPost} />
             <Tab.Screen name="Upload" component={UploadScreen} />
             <Tab.Screen name="Wallet" component={WalletScreen} />
             <Tab.Screen name="Profile" component={ProfileScreen} />

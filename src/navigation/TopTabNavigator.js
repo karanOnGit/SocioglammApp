@@ -1,20 +1,15 @@
+// TopTabNavigator.js
 import React from 'react';
 import { createMaterialTopTabNavigator } from '@react-navigation/material-top-tabs';
 import CommunityScreen from '../screens/CommunityScreen';
 import EcommerceScreen from '../screens/EcommerceScreen';
+import CustomTabBar from '../components/CustomTabBar';
 
 const Tab = createMaterialTopTabNavigator();
 
 export default function TopTabNavigator() {
     return (
-        <Tab.Navigator
-            screenOptions={{
-                tabBarActiveTintColor: '#fff',
-                tabBarInactiveTintColor: '#000',
-                tabBarStyle: { backgroundColor: '#fff' },
-                tabBarIndicatorStyle: { backgroundColor: '#2E8B57' },
-            }}
-        >
+        <Tab.Navigator tabBar={(props) => <CustomTabBar {...props} />}>
             <Tab.Screen name="Community" component={CommunityScreen} />
             <Tab.Screen name="Ecommerce" component={EcommerceScreen} />
         </Tab.Navigator>
