@@ -1,8 +1,8 @@
 // TopTabNavigator.js
 import React from 'react';
 import { createMaterialTopTabNavigator } from '@react-navigation/material-top-tabs';
-import CommunityScreen from '../screens/CommunityScreen';
-import EcommerceScreen from '../screens/EcommerceScreen';
+import CommunityScreen from '../screens/community/CommunityScreen';
+import EcommerceScreen from '../screens/ecommerce/EcommerceScreen';
 import CustomTabBar from '../components/CustomTabBar';
 
 const Tab = createMaterialTopTabNavigator();

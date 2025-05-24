@@ -1,10 +1,10 @@
 import React from 'react';
 import { View, Text } from 'react-native';
 
-export default function ShopScreen() {
+export default function CommHomeScreen() {
     return (
         <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-            <Text>Shop Screen</Text>
+            <Text>Community Home Screen</Text>
         </View>
     );
 }
